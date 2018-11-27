@@ -15,6 +15,9 @@ Features:
     3. Select....from....where query with a single condition of type <attr_name = value>
     (Nested queries as well as queries with complex and/or conditions are yet to be implemented)
 
+implementatio:
+    There is dummy node kept for table head, attribute head and cell head which points to the main table, attribute and cells     respectively.
+
 The main functions implemented are:
 
 void parse(): Parses the queries
@@ -26,13 +29,30 @@ void add_attribute(table_schema* table,string attr_name,string dtype,bool is_pk)
 adds attribute and initialises other fields in the table
 
 insert_row(table_schema* table ,vector<pair<string, string> >&input_list):
-inserts a row in the table with the given values
+inserts a row in the table with the given values.
+If the value inserted for specific attribute does not match with it's value type then it throws error.
 
 table_schema* cross(table_schema*t1, table_schema*t2):
-A cross function that crosses two tables in the database
+A cross function creates new dummy table, crosses two tables in the database and put the values in the dummy node. 
+And returns the pointer to the new created node.
 
 void sigma(table_schema* tmp, string attrname, string val , vector<string> list):
 Sigma functions
 
 void pi(cell *ct, t_attributes* t, vector<string> list):
 Project function
+  
+void min 
+  written the function but not parsed
+  
+ void max
+   written the function but not parsed
+   
+ drop table , drop column and drop row
+    parsing is not done
+  
+print():
+  In first line it prints database name.
+  As it has dummy nodes, at first it prints dummy table. 
+  In next it prints actual table. In that first it prints table name. In next line it prints dummy attribute follwed by attributes of the table. And in next line it prints dummy cell head nodes of each attribute.
+  From next line onwards it prints fist dummy cell followed by cell values in a row.
