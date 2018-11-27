@@ -1,12 +1,7 @@
 Following features are to be implemented:
-1. create table
-  a. not null
-  b. default
-  c. references foreign key
-    i. on delete - cascade, set default, set null
-    ii. on update - cascade
+1. Cross product of more than 2 tables
 2. Nested select query
 3. One letter renaming
 4. delete from table where <condition>
 5. max(​attr), in, except
-6. Cross product of at least 2 tables
+
