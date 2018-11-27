@@ -1,0 +1,19 @@
+
+create table xyz
+(
+	name varchar,
+	age int,
+	dep varchar
+);
+
+create table abc
+(
+	aname varchar,
+	addon int
+);
+
+
+insert into xyz values('reena',29,'CSE');
+insert into xyz values ('bhagi',29,'ce');
+insert into abc values('rad',13);
+select name,dep from xyz,abc where age='29';

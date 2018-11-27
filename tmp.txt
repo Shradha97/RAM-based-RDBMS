@@ -1,0 +1,1 @@
+insert into xyz values (  ' reena '  , 29 ,  ' CSE '  )  ; 
