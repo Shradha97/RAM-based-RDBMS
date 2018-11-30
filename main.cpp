@@ -316,23 +316,17 @@ void parse()
 
 int main()
 {
-
-	 create_database("main_db");
+	create_database("main_db");
 	//formatting query input
 	char c;
-	ifstream myfile ("text.txt");
-
-	//Each query is read separately from text.txt and
-	//the formatted query is written back in tmp.txt
-	//which is further used for processing
-	if (myfile.is_open())
-	{
-		ofstream z("tmp.txt");
+	//ifstream myfile ("text.txt");
+	
+	//if (myfile.is_open())
+	//{
+		//ofstream z("tmp.txt");
 		int i=0;
-		myfile>>c;
-
-		//while loop runs till all the queries are exhausted
-		while(!myfile.eof())
+		cin>>c;
+		while(!cin.eof())
 		{
 			ofstream z("tmp.txt");
 			string input;
@@ -340,7 +334,7 @@ int main()
 				break;
 			while (1)
 			{
-
+			 	
 			 	if(c==';')
 			 		break;
 			 	if(c==',')
@@ -355,28 +349,27 @@ int main()
 			 	input.append(" = ");
 			 	else
 			 	input.append(1, c);
-			 	myfile.get(c);
-
+			 	cin.get(c);
+			 	
 			}
 			input.append(" ; ");
 			z<<input<<endl;
-
-			//function call to parse the query
 			parse();
 			z.close();
 			if(c==EOF)
 				break;
-			myfile>>c;
-
+			cin>>c;
+			
 		}
-
-		myfile.close();
-	}
-	else cout << "Unable to open file";
-
+		
+		//myfile.close();
+	//}
+	//else cout << "Unable to open file";
+	
 	print();
-
-
-
+	//min_attr("xyz","age");
+	//print();
+	
+	
 	return 0;
 }
