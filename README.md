@@ -1,6 +1,6 @@
 # Relational-DBMS
 A RAM based Relational Database Management System built in C++ that implements a few operations of RDMS.
-## File descriptions:
+## File descriptions
   * **dbms.h**: Header file, contains all function declarations.
   
   * **dbms.cpp**: Contains function definitions of all the functions.
@@ -27,7 +27,10 @@ The following queries can be performed on the RDBMS:
 
 *The queries SELECT, FROM and WHERE currently operate on a single condition of type *<attr_name = value>.**
 
-## TO-DO:
+## TO-DO
 1. Implementation of Foreign Key while creation of tables.
 2. Implementation of nested queries with complex **AND**/**OR** conditions.
 3. Parse the **MIN**, **MAX**, **DROP TABLE**, **DROP ROW** and **DROP COLUMN** functions.
+
+## Running the tests
+Clone this repository and run  
