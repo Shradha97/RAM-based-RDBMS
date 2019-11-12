@@ -3,5 +3,5 @@ Following features are to be implemented:
 2. Nested select query
 3. One letter renaming
 4. delete from table where <condition>
-5. max(​attr), in, except
+5. max(attr), in, except
 
