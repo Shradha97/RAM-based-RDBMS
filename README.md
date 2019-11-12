@@ -28,5 +28,5 @@ The following queries can be performed on the RDBMS:
 *The queries SELECT, FROM and WHERE currently operate on a single condition of type *<attr_name = value>.**
 
 ## Running the tests
-Clone this repository and run the main.cpp file on a g++ compiler.
+Clone this repository and run the *main.cpp* file on a g++ compiler.
 
