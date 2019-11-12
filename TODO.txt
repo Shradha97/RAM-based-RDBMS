@@ -5,4 +5,3 @@ Following features are to be implemented:
 4. delete from table where <condition>
 5. max(attr), in, except
 6. Implementation of Foreign Key while creation of tables.
-
