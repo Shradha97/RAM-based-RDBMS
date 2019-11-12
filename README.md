@@ -33,4 +33,4 @@ The following queries can be performed on the RDBMS:
 3. Parse the **MIN**, **MAX**, **DROP TABLE**, **DROP ROW** and **DROP COLUMN** functions.
 
 ## Running the tests
-Clone this repository and run  
+Clone this repository and run the main.cpp file on a g++ compiler.
